@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>WebSocket Client</title>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script> -->
+<!-- <script src="ng-stomp.standalone.min.js"></script> -->
+
+</head>
+<body >
+<div class="liveScore container" ng-app="laboratory" ng-controller="tweetBoardController">
+   <p style="color : #a20707;">Twitter Wall - #HashTagName</p>
+    
+    <table class="table table-striped" width="80%">
+    	<tr ng-repeat="x in response" style="font-size:16px">
+	   		<td> <img src="{{x.profileImageUrl}}"></img></td>
+	   		<td> {{x.screenName}} </td>
+			<td> {{x.tweet}} </td> 
+			<td> {{x.creationDate}} </td>
+    	</tr>
+    </table>
+    
+</div>    
+</body>
+</html>
